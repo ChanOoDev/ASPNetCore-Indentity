@@ -14,7 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(
     .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(x => x.LoginPath = "/account/login");
+    .AddCookie(x => x.LoginPath = "/Auth/login");
 
 var app = builder.Build();
 
